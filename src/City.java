@@ -1,17 +1,15 @@
 public class City {
 
-  private static int nextId = 1;
   private int id;
   private String name;
-  private String longitude;
-  private String latitude;
+  private double latitude;
+  private double longitude;
 
-  public City(String name, String longitude, String latitude) {
+  public City(int id, String name, double latitude,  double longitude) {
     this.name = name;
-    this.longitude = longitude;
     this.latitude = latitude;
-    this.id = nextId;
-    nextId++;
+    this.longitude = longitude;
+    this.id = id;
   }
 
   public int getId() {
@@ -30,21 +28,22 @@ public class City {
     this.name = name;
   }
 
-  public String getLongitude() {
-    return longitude;
-  }
-
-  public void setLongitude(String longitude) {
-    this.longitude = longitude;
-  }
-
-  public String getLatitude() {
+  public double getLatitude() {
     return latitude;
   }
 
-  public void setLatitude(String latitude) {
+  public void setLatitude(double latitude) {
     this.latitude = latitude;
   }
+
+  public double getLongitude() {
+    return longitude;
+  }
+
+  public void setLongitude(double longitude) {
+    this.longitude = longitude;
+  }
+
 
   public String toString() {
     return "City{" + "id=" + id + ", name='" + name + '\'' + ", longitude='" + longitude + '\''
