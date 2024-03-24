@@ -1,26 +1,28 @@
 public class Road {
 
-  private int idSource;
-  private int idDestination;
+  private int city1;
+  private int city2;
 
   public Road(int idSource, int idDestination) {
-    this.idSource = idSource;
-    this.idDestination = idDestination;
+    this.city1 = idSource;
+    this.city2 = idDestination;
   }
 
-  public int getIdSource() {
-    return idSource;
+  public int getCity1() {
+    return city1;
   }
 
-  public void setIdSource(int idSource) {
-    this.idSource = idSource;
+  public void setCity1(int city1) {
+    this.city1 = city1;
   }
 
-  public int getIdDestination() {
-    return idDestination;
+  public int getCity2() {
+    return city2;
   }
 
-  public void setIdDestination(int idDestination) {
-    this.idDestination = idDestination;
+  public void setCity2(int city2) {
+    this.city2 = city2;
   }
+
+
 }
